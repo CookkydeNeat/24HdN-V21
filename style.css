@@ -1,0 +1,36 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --header-height: 80px
+}
+body{
+    margin-top: var(--header-height);
+}
+nav {
+    display: flex;
+    height: var(--header-height);
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.1);
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+nav ul{
+    margin: 0;
+    height: 100%;
+    padding-left: 10px;
+}
+nav ul li{
+    display: inline-block;
+    height: var(--header-height);
+    line-height: var(--header-height);
+    margin: 0 10px;
+}
+nav ul .ressources {
+    display: block;
+    width: 300px;
+}
