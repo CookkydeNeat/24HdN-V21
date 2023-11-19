@@ -7,102 +7,73 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <ul class="links">
-            <li>Lien 1</li>
-            <li>Lien 2</li>
-            <li>Lien 3</li>
-            <li>Lien 4</li> 
-        </ul>
-        <img src="https://placehold.co/300x80" alt="Logo" class="logo">
-        <ul class="ressources">
-            <li class="sources"></li>
-            <li class="search"></li>
-        </ul>
-    </nav>
     <header>
-        <h1>Le titre</h1>
-        <button>Lire la suite</button>
+        <button type="button" class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM149.66,93.66,115.31,128l34.35,34.34a8,8,0,0,1-11.32,11.32l-40-40a8,8,0,0,1,0-11.32l40-40a8,8,0,0,1,11.32,11.32Z"></path></svg>
+        </button>
+        <h2>Les inventions qui ont marqué le monde</h2>
+        <button type="button" class="arrow reverse">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm29.66-93.66a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32L140.69,128,106.34,93.66a8,8,0,0,1,11.32-11.32Z"></path></svg>
+        </button>
     </header>
-    <article>
-        <h2>du bla bla</h2>
-        <p>Encore plus de blabla</p>
-        <div class="article-list">
-            <div class="cards">
-                <h3>Le titre</h3>
-                <p>Le contenu</p>
-                <button>Le bouton</button>
-            </div>
-            <div class="cards">
-                <h3>Le titre</h3>
-                <p>Le contenu</p>
-                <button>Le bouton</button>
-
-            </div> 
-            <div class="cards">
-                <h3>Le titre</h3>
-                <p>Le contenu</p>
-                <button>Le bouton</button>
-            </div>
-        </div>
-    </article>
-    <div class="caroussel">
-        <div class="elements">
-            <div class="element">
-                <h3>Le titre</h3>
-                <p>Le contenu</p>
-                <button>Le bouton</button>
-            </div>
-            <div class="element">
-                <h3>Le titre</h3>
-                <p>Le contenu</p>
-                <button>Le bouton</button>
-            </div>
-            <div class="element">
-                <h3>Le titre</h3>
-                <p>Le contenu</p>
-                <button>Le bouton</button>
-            </div>
-        </div>
-        <div class="arrows">
-            <div class="left"></div>
-            <div class="right"></div>
-        </div>
-    </div>
-    <article class="see-all">
-        <h1>Wah du texte</h1>
-        <p>Allez check ça, ça a l'air sympa nan ?</p>
-        <ul>
-            <li class="card">
-                <h3>Le nom</h3>
-                <button>Voir le truc</button>
-            </li>
-            <li class="card">
-                <h3>Le nom</h3>
-                <button>Voir le truc</button>
-            </li>
-            <li class="card">
-                <h3>Le nom</h3>
-                <button>Voir le truc</button>
-            </li>
-            <li class="card">
-                <h3>Le nom</h3>
-                <button>Voir le truc</button>
-            </li>
-            <li class="card">
-                <h3>Le nom</h3>
-                <button>Voir le truc</button>
-            </li>
-            <li class="card">
-                <h3>Le nom</h3>
-                <button>Voir le truc</button>
-            </li>
-            <li class="card">
-                <h3>Le nom</h3>
-                <button>Voir le truc</button>
-            </li>
+    <aside>
+        <div class="bar"></div>
+        <ul class="date_list">
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
+            <li><a href="#1">L'écriture</a><span class="date">3500 BC</span></li>
         </ul>
-        <button>Voir tous</button>
-    </article>
+    </aside>
+    <div class="right">
+        <section id="1">
+            <h1>L'écriture</h1>
+            <small>3500 BC</small>
+            <p>
+                D’origine Sumérienne de la Mésopotamie, le cunéiforme était gravé sur des tablettes d'argile à l'aide de coins taillés en forme de coins. Il utilisait des symboles pour représenter des mots et des concepts. Le système d'écriture cunéiforme sumérien est considéré comme l'un des plus anciens systèmes d'écriture connus de l'histoire de l'humanité et à ensuite influencés d’autres systèmes d’écriture dans la région et le monde. 
+            </p>
+        </section>
+        <section id="2">
+            <h1>La roue</h1>
+            <small>3500 BC</small>
+            <p>
+                L'invention de la roue, initialement utilisée pour les chariots et les véhicules, a grandement amélioré le transport de marchandises, réduisant l'effort humain et animal nécessaire pour déplacer des charges lourdes.
+            </p>
+        </section>
+        <section id="3">
+            <h1>L'Imprimerie </h1>
+            <small>1440</small> 
+            <p>
+                Johannes Gutenberg a créé la première imprimante à caractères mobiles, permettant la production de livres en série. Cela a démocratisé l'accès à la connaissance et a joué un rôle clé dans la diffusion des idées de la Renaissance et de la Réforme <sub>(Mouvement religieux qui donna naissance, au xvie s., au protestantisme) .</sub> 
+            </p>
+        </section>
+        <section id="4">
+            <h1>Télégraphe</h1>
+            <small>1830</small> 
+            <p>
+                L'invention du télégraphe, avec son système de communication basé sur des signaux électriques transmis sur de longues distances, a fortement raccourci les délais de transmission de l'information, permettant des communications à l'échelle nationale et internationale.
+            </p>
+        </section>
+        <section id="5">
+            <h1>La machine à vapeur</h1>
+            <small>Fin 18<sup>eme</sup> siècle</small> 
+            <p>
+                La machine à vapeur, développée par James Watt et d'autres, a été le moteur de la révolution industrielle. Elle a permis l'automatisation des usines, le transport ferroviaire et la production d'énergie à grande échelle.
+            </p>
+        </section>
+    </div>
+    <!-- <footer>
+        <p>Site réalisé dans le cadre des présélections des 24h du net édition 2023</p>
+        <a href="sources.html">sources</a>
+    </footer> -->
 </body>
 </html>
