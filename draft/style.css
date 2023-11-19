@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap');
+
+/* #region Header */
+
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    --header-height: 50px;
+}
+body{
+    height:100%;
+    scroll-snap-type:y mandatory;
+    overflow: hidden;
+}
+
+header {
+    height: var(--header-height);
+    width: 100%;
+    background-color: #212D30;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1px;
+}
+header h2{
+    text-align: center;
+    flex-shrink: 0;
+    margin: 4px;
+}
+.arrow{
+    position: relative;
+    background: none;
+    border: none;
+    outline: none !important;
+    line-height: 45px ;
+    color: white;
+    height: 100%;
+    font-size: 2.4em;
+    width: 100%;
+    flex-shrink: 2;
+    
+}
+.arrow svg{
+    position: relative;
+    z-index: 5;
+}
+.arrow::before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    transition: opacity 200ms;
+}
+.arrow.reverse::before{
+    background: linear-gradient(-90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+}
+
+.arrow:hover::before{
+    opacity: 1;
+}
+
+/* #endregion */
+
+/* #region Aside */
+ /* aside{
+    float: left;
+    margin-right: 30px;
+    height: calc(100vh - var(--header-height));
+    width: 200px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    padding-right: 150px;
+    position: fixed;
+    z-index: 5;
+ }
+ .bar{
+    float: left;
+    height: 100%;
+    width: 60px;
+ }
+ .date_list li{
+    display: flex;
+    align-items: baseline;
+ }
+.date_list{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5px;
+    margin: 0;
+}
+.date_list li{
+    margin-left: -30px;
+}
+.date_list li a {
+    text-decoration:none;
+    opacity: 0.5;
+    transition: all 200ms ease;
+    color: white;
+}
+.date_list li .date {
+    opacity: 0;
+    transition: all 200ms ease;
+    margin-left: 10px;
+    font-size: 0.8em!important;
+    display: block;
+}
+.date_list li.active a {
+    opacity: 1!important;
+    font-size: 1.2em!important;
+}
+.date_list li.active .date {
+    opacity: 1!important;
+}
+.date_list li:hover a {
+    opacity: 0.7;
+    font-size: 1.1em;
+}
+.date_list li:hover .date {
+    opacity: 0.5;
+    font-size: 0.9em;
+} */
+/* #endregion */
+
+/* #region  Section*/
+
+.right {
+    overflow-y: scroll;
+    height: calc(100vh - var(--header-height));
+    scroll-snap-type:y mandatory;
+    
+}
+
+section {
+    background-color: white;
+    display: block;
+    height: calc(calc(100vh - var(--header-height)));
+    scroll-snap-align: start;
+}
+section .head{
+    display: flex;
+    justify-content: left;
+    padding-left: 150px;
+    position: relative;
+    height: 120px;
+    background: rgb(25,85,0);
+    background: radial-gradient(circle at 30% 10%, rgba(25,85,0,0.9) 0%, rgba(25,85,0,1) 50%);
+    color: white;
+    overflow: visible;
+}
+section img{
+    float: right;
+    width: 300px;
+    margin-right: 150px;
+    margin-left: 20px;
+    margin-top: -90px;
+    position: relative;
+    z-index: 6;
+    border-radius: 10px;
+}
+section h1{
+    font-size: 2.4em;
+    margin: 10px 0;
+}
+section .content{
+    margin:30px 150px;
+    font-size: 1.2em;
+}
+
+/* #endregion */
