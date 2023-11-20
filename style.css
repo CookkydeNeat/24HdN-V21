@@ -18,12 +18,12 @@ html,body{
     height: 250px;
     position: relative;
     width: 100%;
-    background: rgb(20,20,20);
-    background: radial-gradient(circle at 40% 40%, rgba(20,20,20,0.95) 0%, rgba(20,20,20,1) 40%); 
+    background: radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 40%)
 }
 .background .top::after{
     content: '';
-    background-color: white;
+    transition: background-color 200ms ease;
+    background-color: var(--color);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -37,11 +37,9 @@ h1,h2,h3,p{
 .wrapper{
     padding:0 200px;
 }
-.wrapper main,.wrapper article {
-    padding-top: 20px;
-}
 .wrapper .top{
     display: block;
+    padding-top: 40px;
     height: 250px;
     position: relative;
 }
@@ -55,8 +53,8 @@ h1,h2,h3,p{
     z-index: -3;
 }
 main,article {
-    color: white;
     scroll-snap-align: start;
+    color: white;
 }
 main h1,article h1{
     margin-bottom: 10px;
@@ -73,7 +71,7 @@ main .btn{
     padding: 10px 14px;
     font-size: 1.1em;
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
     right: 0;
     color: black;
     text-decoration: none;
@@ -87,6 +85,13 @@ article img{
     width: 300px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.left{
+    float: left!important;
+    margin: 0;
+    width: auto;
+    height:120px ;
+    margin-top: 20px;
 }
 .sep{
     position: absolute!important;
