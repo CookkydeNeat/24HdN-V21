@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: >0.3%,last 4 version,not dead
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap');
 html,body{
     padding: 0;
@@ -76,6 +83,11 @@ main .btn{
     color: black;
     text-decoration: none;
 }
+img.sm {
+    width: 130px;
+    float: right;
+    margin-top: -65px;
+}
 article img{
     float: right;
     position: relative;
@@ -92,6 +104,7 @@ article img{
     width: auto;
     height:120px ;
     margin-top: 20px;
+    margin-right: 20px;
 }
 .sep{
     position: absolute!important;
@@ -108,4 +121,12 @@ article img{
 .sep hr{
     width: 100%;
     margin-bottom: -6px;
+}
+.link{
+    margin-top: 14px;
+    display: block;
+    color:#1aa3e9;
+    text-decoration: none;
+    position: relative;
+    z-index: 5!important;
 }
